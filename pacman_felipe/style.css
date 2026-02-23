@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #05061a;
+    background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(72, 0, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 50%, rgba(0, 255, 247, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 50% 100%, rgba(255, 0, 128, 0.05) 0%, transparent 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Outfit', sans-serif;
+}
+
+#game-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 16px;
+    background: rgba(10, 10, 30, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 247, 0.15);
+    box-shadow:
+        0 0 40px rgba(0, 255, 247, 0.08),
+        0 0 80px rgba(72, 0, 255, 0.06),
+        inset 0 0 60px rgba(0, 0, 0, 0.3);
+}
+
+#gameCanvas {
+    display: block;
+    border-radius: 8px;
+    image-rendering: auto;
+    cursor: default;
+}
